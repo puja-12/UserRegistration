@@ -8,27 +8,31 @@ namespace UserRegistration
 {
     public class UserRegistration
     {
-     
-            public void FirstName()
+
+        public void FirstName()
+        {
+            ;
+            Console.WriteLine("Enter Name Starting from Capital Letter and has Min 3 character");
+            Console.WriteLine("Enter First Name");
+            string Firstname = Console.ReadLine();
+            string firstname = "[A-Z]{1}[a-z]{2,}";
+            Regex regex = new Regex(firstname);
+
+            if (regex.IsMatch(Firstname))
             {
-                Console.WriteLine("Enter First Name");
-                string Firstname = Console.ReadLine();
-                string firstname = "[A-Z]{1}[a-z]{2,}";
-                Regex regex = new Regex(firstname);
-
-                if (regex.IsMatch(Firstname))
-                {
-                    Console.Write("Name is Valid \n");
-                }
-                else
-                {
-                    Console.Write("Plase Enter First Letter Capital \n");
-                }
-
+                Console.Write("Name is Valid \n");
+            }
+            else
+            {
+                Console.Write("Plase Enter First Letter Capital \n");
             }
 
+        }
+
+    }
+
+}
 
         
-    }
-}
+    
 
