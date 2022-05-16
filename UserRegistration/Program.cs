@@ -13,7 +13,7 @@ namespace UserRegistration
         {
             while (true)
             {
-                Console.WriteLine("Please choose the option :\n1)Validating FirstName\n2)Validating LastName\n3)validate Email");
+                Console.WriteLine("Please choose the option :\n1)Validating FirstName\n2)Validating LastName\n3)validate Email\n4)Mobile number Validation");
                 int option = Convert.ToInt16(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +28,10 @@ namespace UserRegistration
                     case 3:
                         UserRegistration user = new UserRegistration();
                         user.Email();
+                        break;
+                    case 4:
+                        UserRegistration Mobile = new UserRegistration();
+                        Mobile.MobileNumber();
                         break;
                 }
             }

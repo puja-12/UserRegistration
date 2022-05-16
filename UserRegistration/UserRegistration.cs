@@ -65,6 +65,24 @@ namespace UserRegistration
 
 
         }
+        public void MobileNumber()
+        {
+            Console.WriteLine("Enter MobileNumber");
+            var MobileNumber = (Console.ReadLine());
+            var mobilenumber = "^[0-9]{2}\\s[0-9]{10}$";
+
+            Regex regex = new Regex(mobilenumber);
+
+            if (regex.IsMatch(MobileNumber))
+            {
+                Console.Write("Mobile Number is Valid \n");
+            }
+            else
+            {
+                Console.Write("Please Enter valid Mobile Number \n");
+            }
+
+        }
     }
 }
 
