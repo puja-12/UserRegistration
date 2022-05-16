@@ -13,7 +13,7 @@ namespace UserRegistration
         {
             Console.WriteLine("Welcome to User Registration Problem Using REGEX!");
 
-            validateName userRegistration = new validateName();
+            UserRegistration userRegistration = new UserRegistration();
             userRegistration.FirstName();
         }
     }
