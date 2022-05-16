@@ -15,7 +15,7 @@ namespace UserRegistration
             Console.WriteLine("Enter Name Starting from Capital Letter and has Min 3 character");
             Console.WriteLine("Enter First Name");
             string Firstname = Console.ReadLine();
-            string firstname = "[A-Z]{1}[a-z]{2,}";
+            string firstname = "[A-Z]{1}[a-z]{2}";
             Regex regex = new Regex(firstname);
 
             if (regex.IsMatch(Firstname))
@@ -33,7 +33,7 @@ namespace UserRegistration
             Console.WriteLine("Enter Last Number Starting from Capital Letter and has Min 3 character");
             Console.WriteLine("Enter Last Name");
             string Lastname = Console.ReadLine();
-            string lasttname = "[A-Z]{1}[a-z]{2,}";
+            string lasttname = "[A-Z]{1}[a-z]{2}";
             Regex regex = new Regex(lasttname);
 
             if (regex.IsMatch(Lastname))
