@@ -46,7 +46,25 @@ namespace UserRegistration
             }
 
         }
-       
+        public void Email()
+        {
+            Console.WriteLine("Enter Email should be format of E.g. abc.xyz@bl.co.in");
+            Console.WriteLine("Enter EmailID");
+            string EmailID = Console.ReadLine();
+            string emailID = "^[a-z]+(.[a-z])+@[A-Za-z]+.[a-z]{2,3}(.[a-z]{2})?$";
+            Regex regex = new Regex(emailID);
+
+            if (regex.IsMatch(EmailID))
+            {
+                Console.Write("EmailID is Valid \n");
+            }
+            else
+            {
+                Console.Write("Plase Enter valid EmailID \n");
+            }
+
+
+        }
     }
 }
 
