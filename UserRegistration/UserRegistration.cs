@@ -28,9 +28,28 @@ namespace UserRegistration
             }
 
         }
+        public void LastName()
+        {
+            Console.WriteLine("Enter Last Number Starting from Capital Letter and has Min 3 character");
+            Console.WriteLine("Enter Last Name");
+            string Lastname = Console.ReadLine();
+            string lasttname = "[A-Z]{1}[a-z]{2,}";
+            Regex regex = new Regex(lasttname);
+
+            if (regex.IsMatch(Lastname))
+            {
+                Console.Write("Name is Valid \n");
+            }
+            else
+            {
+                Console.Write("Plase Enter valid Last Name \n");
+            }
+
+
+
+        }
 
     }
-
 }
 
         
