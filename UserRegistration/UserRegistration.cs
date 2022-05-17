@@ -105,11 +105,29 @@ namespace UserRegistration
         {
             Console.WriteLine("Enter Password");
             var PasswordRule2 = (Console.ReadLine());
-            var passwordRule2 = "^(?=.*[A-Z])[a-zA-Z]{8,}$";
+            var passwordRule2 = "^(?=.*[A-Z])[a-zA-Z0-9]{8,}$";
 
             Regex regex = new Regex(passwordRule2);
 
             if (regex.IsMatch(PasswordRule2))
+            {
+                Console.Write("Password is Valid \n");
+            }
+            else
+            {
+                Console.Write("Please Enter valid Password \n");
+            }
+
+        }
+        public void PasswordRule3()
+        {
+            Console.WriteLine("Enter Password");
+            var PasswordRule3 = (Console.ReadLine());
+            var passwordRule3 = "^(?=.*[0-9])[A-Za-z0-9]{8,}$";
+
+            Regex regex = new Regex(passwordRule3);
+
+            if (regex.IsMatch(PasswordRule3))
             {
                 Console.Write("Password is Valid \n");
             }
