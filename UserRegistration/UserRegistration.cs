@@ -101,6 +101,24 @@ namespace UserRegistration
             }
 
         }
+        public void PasswordRule2()
+        {
+            Console.WriteLine("Enter Password");
+            var PasswordRule2 = (Console.ReadLine());
+            var passwordRule2 = "^[A-Z]{1}[0-9a-zA-Z]{7,}$";
+
+            Regex regex = new Regex(passwordRule2);
+
+            if (regex.IsMatch(PasswordRule2))
+            {
+                Console.Write("Password is Valid \n");
+            }
+            else
+            {
+                Console.Write("Please Enter valid Password \n");
+            }
+
+        }
     }
 }
 
