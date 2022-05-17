@@ -137,9 +137,26 @@ namespace UserRegistration
             }
 
         }
+        public void PasswordRule4()
+        {
+            Console.WriteLine("Enter Password");
+            var PasswordRule4 = (Console.ReadLine());
+            var passwordRule4 = "^(?=.*[@#$%0-9A-Z])[@#$%0-9a-zA-Z]{8,}$";
+
+            Regex regex = new Regex(passwordRule4);
+
+            if (regex.IsMatch(PasswordRule4))
+            {
+                Console.Write("Password is Valid \n");
+            }
+            else
+            {
+                Console.Write("Please Enter valid Password \n");
+            }
+
+        }
     }
 }
-
         
     
 
