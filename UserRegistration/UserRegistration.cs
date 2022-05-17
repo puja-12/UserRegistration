@@ -105,7 +105,7 @@ namespace UserRegistration
         {
             Console.WriteLine("Enter Password");
             var PasswordRule2 = (Console.ReadLine());
-            var passwordRule2 = "^[A-Z]{1}[0-9a-zA-Z]{7,}$";
+            var passwordRule2 = "^(?=.*[A-Z])[a-zA-Z]{8,}$";
 
             Regex regex = new Regex(passwordRule2);
 
