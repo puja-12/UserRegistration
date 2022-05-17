@@ -83,6 +83,24 @@ namespace UserRegistration
             }
 
         }
+        public void Password()
+        {
+            Console.WriteLine("Enter Password");
+            var Password = (Console.ReadLine());
+            var password = "^[A-Za-z0-9]{8}$";
+
+            Regex regex = new Regex(password);
+
+            if (regex.IsMatch(Password))
+            {
+                Console.Write("Password is Valid \n");
+            }
+            else
+            {
+                Console.Write("Please Enter valid Password \n");
+            }
+
+        }
     }
 }
 
