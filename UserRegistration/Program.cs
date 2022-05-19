@@ -18,36 +18,52 @@ namespace UserRegistration
                 switch (option)
                 {
                     case 1:
+                        Console.WriteLine("Enter First Name");
+                        string Firstname = Console.ReadLine();
                         UserRegistration userRegistration = new UserRegistration();
-                        userRegistration.FirstName();
+                        userRegistration.FirstName(Firstname);
                         break;
                     case 2:
+                        Console.WriteLine("Enter Last Name");
+                        string Lastname = Console.ReadLine();
                         UserRegistration userRegistration1 = new UserRegistration();
-                        userRegistration1.LastName();
+                        userRegistration1.LastName(Lastname);
                         break;
                     case 3:
+                        Console.WriteLine("Enter EmailID");
+                        string EmailID = Console.ReadLine();
                         UserRegistration user = new UserRegistration();
-                        user.Email();
+                        user.Email(EmailID);
                         break;
                     case 4:
+                        Console.WriteLine("Enter MobileNumber");
+                        var MobileNumber = (Console.ReadLine());
                         UserRegistration Mobile = new UserRegistration();
-                        Mobile.MobileNumber();
+                        Mobile.MobileNumber(MobileNumber);
                         break;
                     case 5:
+                        Console.WriteLine("Enter Password");
+                        var Password = (Console.ReadLine());
                         UserRegistration Pas = new UserRegistration();
-                        Pas.Password();
+                        Pas.Password(Password);
                         break;
                     case 6:
+                        Console.WriteLine("Enter Password");
+                        var Password2 = (Console.ReadLine());
                         UserRegistration Pas1 = new UserRegistration();
-                        Pas1.PasswordRule2();
+                        Pas1.PasswordRule2(Password2);
                         break;
                     case 7:
+                        Console.WriteLine("Enter Password");
+                        var Password3 = (Console.ReadLine());
                         UserRegistration Pas2 = new UserRegistration();
-                        Pas2.PasswordRule3();
+                        Pas2.PasswordRule3(Password3);
                         break;
                     case 8:
+                        Console.WriteLine("Enter Password");
+                        var Password4 = (Console.ReadLine());
                         UserRegistration Pas3 = new UserRegistration();
-                        Pas3.PasswordRule4();
+                        Pas3.PasswordRule4(Password4);
                         break;
                     case 9:
                         EmailValidation emailValidation = new EmailValidation();
